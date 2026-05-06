@@ -121,6 +121,19 @@ const SKILLS = [
 // ── App ───────────────────────────────────────────────────────────────────────
 
 export default function App() {
+
+  const [showNavbarName, setShowNavbarName] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowNavbarName(window.scrollY > 180);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -153,13 +166,21 @@ export default function App() {
             : ""
         }`}
       >
-        <div className="max-w-9xl mx-auto px-4 sm:px-6 md:px-12 h-16 flex items-center justify-between gap-4 overflow-hidden">          <button
-            onClick={() => goto("hero")}
-            className="font-display text-sm tracking-[0.22em] uppercase text-primary hover:opacity-70 transition-opacity"
-          >
-            Venkatamani Sasank
-          </button>
-
+        <div className="max-w-9xl mx-auto px-4 sm:px-6 md:px-12 h-16 flex items-center justify-between gap-4 overflow-hidden">
+        <motion.button
+          onClick={() => goto("hero")}
+          initial={{ opacity: 0, y: -12 }}
+          animate={{
+            opacity: showNavbarName ? 1 : 0,
+            y: showNavbarName ? 0 : -12,
+          }}
+          transition={{ duration: 0.35, ease: "easeOut" }}
+          className={`font-display text-sm tracking-[0.22em] uppercase text-primary hover:opacity-70 transition-opacity ${
+            showNavbarName ? "pointer-events-auto" : "pointer-events-none"
+          }`}
+        >
+          Venkatamani Sasank
+        </motion.button>
           <nav className="hidden md:flex items-center gap-9">
             {NAV_ITEMS.map((n) => (
               <button
