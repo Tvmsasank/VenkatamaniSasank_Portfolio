@@ -276,8 +276,11 @@ export default function App() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.85, delay: 1.1 }}
               className="text-muted-foreground text-sm sm:text-base md:text-lg max-w-lg mx-auto leading-relaxed mb-12 px-2"            >
-              Building scalable cloud infrastructure and reliable .NET systems.
-              Bridging development and operations with AWS and modern automation.
+              Aspiring AWS DevOps Engineer and .NET Full Stack Developer in building
+              and maintaining web applications using C#, ASP.NET Core/MVC, SQL Server,
+              and JavaScript, actively learning AWS cloud, DevOps, and AI. 
+              Passionate about building scalable systems and eager to grow into cloud engineering 
+              and AI-driven development roles.            
             </motion.p>
 
             <motion.div
