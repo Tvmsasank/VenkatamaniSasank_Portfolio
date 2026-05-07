@@ -228,7 +228,7 @@ export default function App() {
         {/* ── HERO ─────────────────────────────────────────────────────── */}
         <section
           id="hero"
-          className="min-h-screen flex flex-col items-center justify-center relative px-4 sm:px-6 text-center overflow-hidden"
+          className="min-h-screen flex flex-col items-center justify-center relative px-4 sm:px-6 text-center overflow-hidden pt-24 pb-20"
         >
           {/* Dot grid */}
           <div
@@ -244,7 +244,7 @@ export default function App() {
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[420px] rounded-full bg-gradient-to-r from-blue-500/20 via-sky-400/10 to-white/10 blur-[160px]" />
           </div>
 
-          <div className="relative z-10 max-w-5xl mx-auto w-full px-2 sm:px-0 pointer-events-none">
+          <div className="relative z-10 w-full max-w-[1400px] mx-auto px-6 sm:px-10 lg:px-16">
               <motion.span
               initial={{ opacity: 0, y: -14 }}
               animate={{ opacity: 1, y: 0 }}
@@ -257,7 +257,7 @@ export default function App() {
               initial={{ opacity: 0, y: 56 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.15, delay: 0.42, ease: "easeOut" }}
-              className="font-display font-black text-[clamp(2.8rem,7vw,10.5rem)] leading-[0.9] tracking-[-0.02em] text-foreground mb-6 break-words"
+              className="font-display font-black text-[clamp(3.5rem,7vw,11rem)] leading-[0.88] tracking-[-0.03em] text-foreground mb-8"
             >
               Venkatamani
               <br />
@@ -275,12 +275,7 @@ export default function App() {
               initial={{ opacity: 0, y: 22 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.85, delay: 1.1 }}
-              className="text-muted-foreground text-sm sm:text-base md:text-lg max-w-lg mx-auto leading-relaxed mb-12 px-2"            >
-              Aspiring AWS DevOps Engineer and .NET Full Stack Developer in building
-              and maintaining web applications using C#, ASP.NET Core/MVC, SQL Server,
-              and JavaScript, actively learning AWS cloud, DevOps, and AI. 
-              Passionate about building scalable systems and eager to grow into cloud engineering 
-              and AI-driven development roles.            
+              className="text-muted-foreground text-base sm:text-lg md:text-xl max-w-3xl mx-auto leading-[1.9] mb-14 px-4"            >
             </motion.p>
 
             <motion.div
@@ -290,7 +285,7 @@ export default function App() {
               className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16 w-full sm:w-auto pointer-events-auto"            >
               <button
                 onClick={() => goto("projects")}
-                className="w-full sm:w-auto px-8 py-3.5 bg-gradient-to-r from-blue-600 to-sky-400 text-primary-foreground font-mono-label text-[10px] tracking-[0.28em] uppercase hover:bg-gradient-to-r from-blue-600 to-sky-400/82 transition-all duration-300 active:scale-95 cursor-pointer"
+                className="w-full sm:w-auto px-8 py-3.5 bg-gradient-to-r from-blue-600 via-sky-500 to-cyan-400 shadow-[0_0_35px_rgba(56,189,248,0.35)] hover:shadow-[0_0_55px_rgba(56,189,248,0.55)] text-primary-foreground font-mono-label text-[10px] tracking-[0.28em] uppercase hover:bg-gradient-to-r from-blue-600 to-sky-400/82 transition-all duration-300 active:scale-95 cursor-pointer"
               >
                 View Projects
               </button>
@@ -523,7 +518,7 @@ export default function App() {
                   <motion.article
                     key={p.title}
                     variants={fadeUp}
-                    className="relative bg-white/[0.03] backdrop-blur-xl border border-white/10 p-8 overflow-hidden group hover:border-blue-400/40 hover:-translate-y-1 hover:shadow-[0_0_45px_rgba(59,130,246,0.12)] transition-all duration-500"
+                    className="relative bg-white/[0.03] backdrop-blur-xl border border-white/10 p-8 overflow-hidden group hover:border-blue-400/40 transition-all duration-700 ease-out hover:shadow-[0_0_45px_rgba(59,130,246,0.12)] transition-all duration-500"
                   >
                     <div className="absolute left-0 top-0 bottom-0 w-[3px] bg-gradient-to-r from-blue-600 to-sky-400 opacity-25 group-hover:opacity-100 transition-opacity duration-500" />
                     <div className="absolute inset-0 bg-gradient-to-br from-primary/[0.04] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
@@ -602,7 +597,7 @@ export default function App() {
               </motion.p>
               <motion.h2
                 variants={fadeUp}
-                className="font-display text-4xl md:text-6xl text-foreground mb-14"
+                className="font-display text-4xl md:text-6xl text-foreground mb-14 drop-shadow-[0_0_18px_rgba(59,130,246,0.18)]"
               >
                 Technical Arsenal
               </motion.h2>
