@@ -55,7 +55,7 @@ function Reveal({
 
 // ── Data ──────────────────────────────────────────────────────────────────────
 
-const NAV_ITEMS = ["About", "Experience", "Projects", "Skills", "Contact"];
+const NAV_ITEMS = ["About","Experience", "UpSkilling", "Projects", "Skills", "Contact"];
 
 const PROJECTS = [
   {
@@ -492,6 +492,84 @@ export default function App() {
           </div>
         </section>
 
+        {/* ── UPSKILLING ───────────────────────────────────────────────── */}
+        <section
+          id="upskilling"
+          className="py-28 md:py-36 px-6 border-t border-border"
+        >
+          <div className="max-w-7xl mx-auto">
+            <Reveal>
+                <motion.p
+                  variants={fadeUp}
+                  className="font-mono-label text-[10px] tracking-[0.38em] text-primary uppercase mb-11"
+                >
+                  03 / UpSkilling
+                </motion.p>
+
+                <motion.h2
+                  variants={fadeUp}
+                  className="font-display text-4xl md:text-6xl text-foreground mb-13"
+                >
+                  Learning Journey
+                </motion.h2>
+
+              <motion.div
+                variants={fadeUp}
+                className="max-w-4xl mx-auto text-left"
+              >
+                <div className="mb-8">
+                  <h3 className="text-2xl md:text-3xl font-semibold text-foreground mb-3">
+                    Jenkins CI/CD Pipeline with Maven
+                  </h3>
+
+                  <p className="text-primary font-mono-label tracking-[0.18em] uppercase text-xs">
+                    Hands-on DevOps Practice
+                  </p>
+                </div>
+
+                <div className="space-y-5 text-muted-foreground text-base md:text-lg leading-relaxed">
+                  
+                  <div className="border-l border-primary/40 pl-5 mb-1 text-2xl">
+                    <span className="text-foreground font-semibold">1.</span>{" "}
+                    Created a freestyle Jenkins CI/CD pipeline integrated with Maven,
+                  </div>
+
+                  <div className="pl-10 mb-1">
+                    <span className="text-foreground font-semibold">-</span>{" "}
+                    Installed required Jenkins plugins and connected GitHub repository.
+                  </div>
+
+                  <div className="pl-10 mb-1">
+                    <span className="text-foreground font-semibold">-</span>{" "}
+                    Configured Jenkins inside Docker container and managed workspace execution using bash shell.
+                  </div>
+
+                  <div className="pl-10 mb-1">
+                    <span className="text-foreground font-semibold">-</span>{" "}
+                    Configured Maven goals for clean, build, package, and artifact generation (.jar).
+                  </div>
+
+                  <div className="pl-10 mb-1">
+                    <span className="text-foreground font-semibold">-</span>{" "}
+                    Executed Maven test phase and generated Surefire test reports.
+                  </div>
+
+                  <div className="pl-10 mb-1">
+                    <span className="text-foreground font-semibold">-</span>{" "}
+                    Added execute shell scripts to run generated Java artifacts from Jenkins workspace.
+                  </div>
+
+                  <div className="pl-10">
+                    <span className="text-foreground font-semibold">-</span>{" "}
+                    Published JUnit reports and validated pipeline builds multiple times for reporting accuracy.
+                  </div>
+
+                </div>
+              </motion.div>
+            </Reveal>
+          </div>
+        </section>
+
         {/* ── PROJECTS ─────────────────────────────────────────────────── */}
         <section
           id="projects"
@@ -503,7 +581,7 @@ export default function App() {
                 variants={fadeUp}
                 className="font-mono-label text-[10px] tracking-[0.38em] text-primary uppercase mb-12"
               >
-                03 / Projects
+                04 / Projects
               </motion.p>
               <motion.h2
                 variants={fadeUp}
@@ -592,7 +670,7 @@ export default function App() {
                 variants={fadeUp}
                 className="font-mono-label text-[10px] tracking-[0.38em] text-primary uppercase mb-12"
               >
-                04 / Skills
+                05 / Skills
               </motion.p>
               <motion.h2
                 variants={fadeUp}
@@ -632,7 +710,7 @@ export default function App() {
                 variants={fadeUp}
                 className="font-mono-label text-[10px] tracking-[0.38em] text-primary uppercase mb-12"
               >
-                05 / Education &amp; Certifications
+                06 / Education &amp; Certifications
               </motion.p>
               <motion.h2
                 variants={fadeUp}
