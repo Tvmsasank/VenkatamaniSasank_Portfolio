@@ -465,6 +465,7 @@ export default function App() {
                     </span>
                   </div>
 
+                  {/* IRCTC Clone */}
                   <p className="font-mono-label text-[10px] tracking-wider text-muted-foreground mb-8 pb-6 border-b border-border/40">
                     Project: IRCTC Clone &nbsp;·&nbsp; C# &nbsp;·&nbsp; ASP.NET
                     MVC &nbsp;·&nbsp; Visual Studio 2022
@@ -476,6 +477,51 @@ export default function App() {
                       "Implemented booking logic (CNF/RAC/WL), pricing engine, and session handling",
                       "Designed admin panel with CRUD operations for Trains, Routes, and Schedules",
                       "Built responsive UI with Bootstrap, improving page load performance across devices",
+                    ].map((pt, i) => (
+                      <li key={i} className="flex items-start gap-3.5">
+                        <span className="text-primary text-[9px] mt-1.5 flex-shrink-0">
+                          ◆
+                        </span>
+                        <span className="text-muted-foreground text-sm leading-relaxed">
+                          {pt}
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </motion.div>
+
+              {/* AI-Powered University Question System */}
+              <motion.div
+                variants={fadeUp}
+                className="mt-10 relative bg-card border border-border/60 p-8 md:p-12 overflow-hidden group hover:border-primary/25 transition-all duration-500"
+              >
+                <div className="absolute left-0 top-0 bottom-0 w-[3px] bg-gradient-to-r from-blue-600 to-sky-400" />
+                <div className="absolute inset-0 bg-gradient-to-r from-primary/[0.03] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-600" />
+
+                <div className="relative z-10">
+                  <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 mb-8 pb-6 border-b border-border/40">
+
+                    <p className="font-mono-label text-[10px] tracking-wider text-muted-foreground leading-relaxed">
+                      Project: AI-Powered University Question System
+                      &nbsp;·&nbsp; C#
+                      &nbsp;·&nbsp; ASP.NET MVC
+                      &nbsp;·&nbsp; Visual Studio 2022
+                      &nbsp;.&nbsp; Vector Embeddings & Search
+                      &nbsp;·&nbsp; LocalONNXModel
+                    </p>
+
+                    <span className="font-mono-label text-[11px] text-muted-foreground tracking-wider whitespace-nowrap flex-shrink-0">
+                      Sep 2025 — Dec 2025
+                    </span>
+
+                  </div>
+                  <ul className="space-y-4">
+                    {[
+                      "Built an AI-powered question management system using ASP.NET MVC, C#, SQL Server, and vector embeddings",
+                      "Implemented semantic similarity detection for duplicate and rephrased university questions",
+                      "Designed Bloom’s Taxonomy–based learning outcome classification with configurable similarity thresholds",
+                      "Developed responsive admin UI with CKEditor integration and image-supported question uploads",
                     ].map((pt, i) => (
                       <li key={i} className="flex items-start gap-3.5">
                         <span className="text-primary text-[9px] mt-1.5 flex-shrink-0">
