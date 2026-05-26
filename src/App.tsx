@@ -110,7 +110,7 @@ const PROJECTS = [
 const SKILLS = [
   {
     cat: "Cloud / AWS",
-    items: ["S3", "EC2", "RDS", "Lambda", "API Gateway", "CloudFront", "Route 53", "IAM"],
+    items: ["S3", "EC2", "RDS", "Lambda", "API Gateway", "CloudFront", "Route 53", "IAM", "VPC", "SNS", "CloudWatch"],
   },
   { cat: "Languages", items: ["C", "C#", "JavaScript"] },
   { cat: "DevOps", items: ["Git", "GitHub", "Docker", "Linux", "Terraform"] },
