@@ -67,7 +67,7 @@ const PROJECTS = [
       "Responsive SPA built with React, Vite, TypeScript, and Tailwind CSS",
       "WhatsApp API integration for direct customer engagement",
       "Deployed on AWS S3 (static hosting), CloudFront CDN, Route 53 DNS, ACM SSL",
-      // "Automated deployments using GitHub Actions and managed AWS infrastructure using Terraform (IaC)"
+      "Automated deployments using GitHub Actions and managed AWS infrastructure using Terraform (IaC)"
     ],
     url: "sriadityaenterprises.com",
   },
