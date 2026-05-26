@@ -62,11 +62,12 @@ const PROJECTS = [
     title: "Sri Aditya Enterprises",
     type: "Business Website",
     period: "Jan 2026",
-    stack: ["React", "TypeScript", "Vite", "Tailwind CSS", "AWS S3", "CloudFront", "Route 53", "ACM"],
+    stack: ["React", "TypeScript", "Vite", "Tailwind CSS", "AWS S3", "CloudFront", "Route 53", "ACM", "Terraform", "GitHub"],
     bullets: [
       "Responsive SPA built with React, Vite, TypeScript, and Tailwind CSS",
       "WhatsApp API integration for direct customer engagement",
       "Deployed on AWS S3 (static hosting), CloudFront CDN, Route 53 DNS, ACM SSL",
+      "Automated deployments using GitHub Actions and managed AWS infrastructure using Terraform (IaC)"
     ],
     url: "sriadityaenterprises.com",
   },
@@ -512,6 +513,13 @@ export default function App() {
                 >
                   Learning Journey
                 </motion.h2>
+
+              <motion.div
+                variants =  {fadeUp}
+                className = "max-w-4xl mx-auto text-left"
+              >
+
+              </motion.div>
 
               <motion.div
                 variants={fadeUp}
