@@ -113,7 +113,7 @@ const SKILLS = [
     items: ["S3", "EC2", "RDS", "Lambda", "API Gateway", "CloudFront", "Route 53", "IAM"],
   },
   { cat: "Languages", items: ["C", "C#", "JavaScript"] },
-  { cat: "DevOps", items: ["Git", "GitHub", "Docker", "Linux"] },
+  { cat: "DevOps", items: ["Git", "GitHub", "Docker", "Linux", "Terraform"] },
   { cat: "Frameworks", items: ["ASP.NET MVC"] },
   { cat: "Databases", items: ["MS SQL Server"] },
   { cat: "Tools", items: ["Visual Studio 2022", "VSCode"] },
